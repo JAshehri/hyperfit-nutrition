@@ -1,0 +1,17 @@
+name_ar,name_en,category,kcal_per_100g,protein_g_per_100g,carb_g_per_100g,fat_g_per_100g,measurement_state,is_approximate,source_type
+صدر دجاج مشوي بدون جلد,Grilled chicken breast,الدجاج واللحوم,165,31,0,3.6,COOKED,false,HYPERFIT_GENERAL
+فخذ دجاج بدون جلد,Skinless chicken thigh,الدجاج واللحوم,209,26,0,11,COOKED,false,HYPERFIT_GENERAL
+صدر ديك رومي,Turkey breast,الدجاج واللحوم,135,29,0,1.5,COOKED,false,HYPERFIT_GENERAL
+لحم بقري قليل الدهن,Lean beef,الدجاج واللحوم,200,26,0,10,COOKED,false,HYPERFIT_GENERAL
+سمك أبيض مشوي,Grilled white fish,الأسماك والمأكولات البحرية,120,24,0,2,COOKED,false,HYPERFIT_GENERAL
+سلمون مطبوخ,Cooked salmon,الأسماك والمأكولات البحرية,206,22,0,12,COOKED,false,HYPERFIT_GENERAL
+بيض كامل,Whole egg,البيض,143,12.6,0.7,9.5,AS_EATEN,false,HYPERFIT_GENERAL
+زبادي يوناني خالي الدسم,Non-fat Greek yogurt,الألبان والزبادي,59,10,3.6,0.4,AS_EATEN,false,HYPERFIT_GENERAL
+أرز بسمتي مطبوخ,Cooked basmati rice,الأرز والحبوب,130,3,28,0.3,COOKED,false,HYPERFIT_GENERAL
+عدس مطبوخ,Cooked lentils,البقوليات,116,9,20,0.4,COOKED,false,HYPERFIT_GENERAL
+بروكلي مطبوخ,Cooked broccoli,الخضار,35,2.4,7,0.4,COOKED,false,HYPERFIT_GENERAL
+تفاح,Apple,الفواكه,52,0.3,13.8,0.2,AS_EATEN,false,HYPERFIT_GENERAL
+موز,Banana,الفواكه,89,1.1,22.8,0.3,AS_EATEN,false,HYPERFIT_GENERAL
+لوز,Almonds,المكسرات والبذور,579,21,22,50,AS_EATEN,false,HYPERFIT_GENERAL
+زيت زيتون,Olive oil,مصادر الدهون والإضافات,884,0,0,100,AS_EATEN,false,HYPERFIT_GENERAL
+

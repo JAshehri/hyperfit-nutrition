@@ -1,0 +1,283 @@
+.meal-type-picker {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #29302e;
+  border-radius: 8px;
+  color: #8e9995;
+}
+
+.meal-type-picker legend {
+  padding: 0 6px;
+  font-size: 11px;
+}
+
+.meal-type-picker label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #d6dfdb;
+}
+
+.meal-type-picker input {
+  width: 16px;
+  min-height: 16px;
+}
+
+.role-badge {
+  display: inline-flex;
+  padding: 5px 9px;
+  border: 1px solid rgba(3, 255, 135, .25);
+  border-radius: 99px;
+  color: #03ff87;
+  font-size: 10px;
+}
+
+.logout-btn {
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid #29322e;
+  border-radius: 8px;
+  background: transparent;
+  color: #9baba4;
+}
+
+.boot-screen,
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 0, rgba(3, 255, 135, .09), transparent 38%), #090909;
+}
+
+.login-panel {
+  width: min(460px, calc(100vw - 32px));
+  padding: 34px;
+  border: 1px solid #27302d;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #121715, #0d100f);
+}
+
+.login-panel .brand {
+  margin: 0 0 24px;
+}
+
+.login-kicker {
+  color: #03ff87;
+  font-size: 10px;
+}
+
+.login-panel h1 {
+  margin: 8px 0;
+}
+
+.login-panel p,
+.login-panel > small {
+  color: #84908c;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.role-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  margin: 22px 0;
+}
+
+.role-selector button {
+  padding: 10px;
+  border: 1px solid #2b3531;
+  border-radius: 8px;
+  background: #0b0f0e;
+  color: #8e9995;
+}
+
+.role-selector button.active {
+  border-color: #03ff87;
+  color: #03ff87;
+  background: rgba(3, 255, 135, .06);
+}
+
+.login-panel form {
+  display: grid;
+  gap: 13px;
+  margin-bottom: 16px;
+}
+
+.login-panel label {
+  display: grid;
+  gap: 7px;
+  color: #8e9995;
+  font-size: 10px;
+}
+
+.client-shell {
+  min-height: 100vh;
+  padding: 28px clamp(18px, 6vw, 80px) 60px;
+  background: radial-gradient(circle at 50% -10%, rgba(3, 255, 135, .065), transparent 35%), #0b0e0d;
+}
+
+.client-shell > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-shell > header .brand {
+  margin: 0;
+}
+
+.client-shell > header > div {
+  display: flex;
+  gap: 10px;
+}
+
+.client-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 42px 0 20px;
+  padding: 28px;
+  border: 1px solid #26302c;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #121715, #0f1312);
+}
+
+.client-hero p,
+.client-hero h1 {
+  margin: 0 0 7px;
+}
+
+.client-hero span,
+.client-hero small {
+  color: #84908c;
+  font-size: 11px;
+}
+
+.client-hero strong {
+  display: block;
+  margin-top: 7px;
+  color: #03ff87;
+  font-size: 24px;
+}
+
+.client-macros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 18px;
+  border: 1px solid #26302c;
+  border-radius: 14px;
+  background: #111514;
+}
+
+.admin-create-card {
+  padding: 22px;
+}
+
+.admin-user-form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.admin-user-form label {
+  display: grid;
+  gap: 7px;
+  color: #89958f;
+  font-size: 10px;
+}
+
+.admin-user-form .primary-btn {
+  align-self: end;
+}
+
+.admin-message,
+.loading-line {
+  margin: 14px 0 0;
+  color: #b7c1bd;
+  font-size: 11px;
+}
+
+.users-table .data-row {
+  grid-template-columns: 1.5fr .55fr .55fr .75fr 1fr;
+}
+
+.user-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.user-actions .danger-btn {
+  min-height: 30px;
+  padding: 0 10px;
+}
+
+.user-active { color: #03ff87; }
+.user-suspended { color: #ff8d8d; }
+
+.builder-actions { flex-wrap: wrap; }
+
+.plan-readonly-note {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border: 1px solid #2b3833;
+  border-radius: 8px;
+  background: #0d1311;
+  color: #9caaa4;
+  font-size: 11px;
+}
+
+.account-settings,
+.adherence-card {
+  padding: 22px;
+}
+
+.account-settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.account-settings-grid form + form {
+  padding-inline-start: 28px;
+  border-inline-start: 1px solid #252e2b;
+}
+
+.client-account-page { margin-top: 42px; }
+.client-meal-message { color: #03ff87; font-size: 11px; }
+
+.adherence-list { display: grid; }
+.adherence-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 60px 90px;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #222a27;
+}
+.adherence-row:last-child { border-bottom: 0; }
+.adherence-row > strong { color: #03ff87; }
+.adherence-track {
+  height: 5px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #252d2a;
+}
+.adherence-track i { display: block; height: 100%; background: #03ff87; }
+
+@media (max-width: 700px) {
+  .client-hero { align-items: flex-start; gap: 20px; }
+  .client-macros { grid-template-columns: 1fr 1fr; }
+  .meal-type-picker { flex-wrap: wrap; }
+  .admin-user-form { grid-template-columns: 1fr 1fr; }
+  .account-settings-grid { grid-template-columns: 1fr; }
+  .account-settings-grid form + form { padding-inline-start: 0; border-inline-start: 0; padding-top: 18px; border-top: 1px solid #252e2b; }
+  .adherence-row { grid-template-columns: 1fr; }
+  .users-table { overflow-x: auto; }
+  .users-table .data-row { min-width: 760px; }
+}
