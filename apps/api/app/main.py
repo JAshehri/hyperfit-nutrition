@@ -1,16 +1,36 @@
 from contextlib import asynccontextmanager
+import os
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from app.api.v1.router import api_router
+from app.bootstrap_admin import ensure_administrator_from_environment
 from app.database import initialize_database
 from app.domain.nutrition.engine import NutritionValidationError
+
+
+LOCAL_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:3010",
+    "http://127.0.0.1:3010",
+]
+
+
+def allowed_origins() -> list[str]:
+    configured = [
+        origin.strip().rstrip("/")
+        for origin in os.getenv("HYPERFIT_ALLOWED_ORIGINS", "").split(",")
+        if origin.strip()
+    ]
+    return list(dict.fromkeys([*LOCAL_ORIGINS, *configured]))
 
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     initialize_database()
+    ensure_administrator_from_environment()
     yield
 
 
@@ -23,10 +43,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000", "http://127.0.0.1:3000",
-        "http://localhost:3010", "http://127.0.0.1:3010",
-    ],
+    allow_origins=allowed_origins(),
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=["*"],
